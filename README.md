@@ -1,46 +1,38 @@
 # 🌊 Underwater Image RGB Color Enhancement
 
-A Python-based underwater image enhancement project that improves the visibility and color quality of underwater images and videos using image processing techniques.
+A Python-based underwater image enhancement project that improves the visibility, contrast, and color quality of underwater images using image processing techniques.
 
 ---
 
 ## 📌 Project Overview
 
-Underwater images often suffer from poor visibility, low contrast, and color distortion due to light absorption and scattering in water. This project enhances underwater images and videos by applying a sequence of image processing techniques to improve visual quality.
+Underwater images often suffer from poor visibility, low contrast, and color distortion due to light absorption and scattering in water. This project enhances underwater images by applying image processing techniques such as Histogram Equalization, White Balancing, and Contrast Limited Adaptive Histogram Equalization (CLAHE) to produce visually improved results.
+
+---
+
+## 🎯 Objective
+
+To improve the quality of underwater images by enhancing brightness, contrast, and color balance, making them more suitable for marine research, underwater exploration, and computer vision applications.
 
 ---
 
 ## ✨ Features
 
-- Enhance underwater RGB images
-- Improve red color information
-- Perform automatic white balancing
-- Enhance contrast using CLAHE
-- Compare original and enhanced images
-- Display histogram comparison
-- Process both images and videos
+- Enhances underwater RGB images
+- Histogram Equalization on the Red channel
+- White Balance correction
+- Contrast enhancement using CLAHE
+- Histogram comparison before and after enhancement
+- Simple menu-driven Python program
 
 ---
 
 ## 🛠️ Technologies Used
 
--- Python 3
+- Python
 - OpenCV
 - NumPy
 - Matplotlib
-- Computer Vision
-- Image Processing
-
----
-
-## ⚙️ Enhancement Pipeline
-
-1. Read the input image/video.
-2. Enhance the Red channel using Histogram Equalization.
-3. Apply White Balance for color correction.
-4. Apply CLAHE (Contrast Limited Adaptive Histogram Equalization).
-5. Generate the final enhanced output.
-6. Display comparison between original and enhanced results.
 
 ---
 
@@ -49,76 +41,85 @@ Underwater images often suffer from poor visibility, low contrast, and color dis
 ```
 Underwater-Image-RGB_Color-Enhancement/
 │
-├── main.py
-├── underwater img 1.jpg
-├── underwater img 2.jpg
-├── underwater img 3.webp
+├── input_images/
+│   ├── underwater img 1.jpg
+│   ├── underwater img 2.jpg
+│   └── underwater img 3.webp
+│
+├── results/
+│   ├── comparison_image1.png
+│   ├── comparison_image2.png
+│   └── comparison_image3.png
+│
+├── underwater_image_enhancement.py
+├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## 🚀 How to Run
+## ⚙️ Enhancement Pipeline
 
-1. Install the required libraries.
+The enhancement process follows these steps:
 
-```bash
-pip install opencv-python numpy matplotlib
-```
-
-2. Run the program.
-
-```bash
-python main.py
-```
-
-3. Choose:
-
-- Process Images
-- Process Videos
+1. Histogram Equalization on the Red Channel
+2. White Balance Correction
+3. CLAHE (Contrast Limited Adaptive Histogram Equalization)
+4. Histogram Comparison
 
 ---
 
-## 📊 Output
+## 🖼️ Results
 
-The program displays:
+### Comparison Result 1
 
-- Original Image
-- White Balanced Image
-- Final Enhanced Image
-- Histogram Comparison
+![Comparison Image 1](results/comparison_image1.png)
 
-For videos, the original and enhanced outputs are displayed simultaneously for comparison.
+### Comparison Result 2
+
+![Comparison Image 2](results/comparison_image2.png)
+
+### Comparison Result 3
+
+![Comparison Image 3](results/comparison_image3.png)
 
 ---
 
-## 🔮 Future Improvements
+## 👥 Team Project
 
-- Deep Learning-based enhancement
+This project was developed as a **six-member academic team project**.
+
+---
+
+## 👤 My Contribution
+
+- Implemented the underwater image enhancement pipeline in Python.
+- Applied Histogram Equalization, White Balance, and CLAHE techniques.
+- Generated histogram comparisons for image analysis.
+- Tested the enhancement process on multiple underwater images.
+- Organized the GitHub repository and prepared the project documentation.
+
+---
+
+## 🚀 Future Enhancements
+
+- Deep learning-based underwater image enhancement
 - Real-time underwater video enhancement
-- GUI application
-- Support for more enhancement algorithms
+- Graphical User Interface (GUI)
+- Integration with underwater object detection models
 
 ---
 
-## 👥 Team
+## 📄 Requirements
 
-This project was developed as a **6-member team project** as part of our academic coursework.
+Install the required Python libraries using:
 
-### My Contribution
-
-- Developed the Python implementation for underwater image and video enhancement.
-- Implemented RGB color enhancement and white balancing.
-- Applied CLAHE for contrast enhancement.
-- Performed image and video processing using OpenCV.
-- Generated histogram comparisons for enhanced images.
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## 👩‍💻 Author
+## 📜 License
 
-**Thiriloshani S**
-
-B.E. Electronics and Communication Engineering
-
-Velammal Institute of Technology
+This project is intended for academic and educational purposes.
